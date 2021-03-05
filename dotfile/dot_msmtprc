@@ -1,0 +1,7 @@
+account default
+host smtp.163.com
+user name@server
+from name@server
+auth login
+tls off
+password pass-for-demo

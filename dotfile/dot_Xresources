@@ -1,0 +1,105 @@
+! % xrdb -load ~/.Xresources
+! % xrdb -query
+! % xrdb -symbol
+! % xrdb -merge ~/.Xresources
+
+! XTerm config
+XTerm*locale: true
+
+XTerm*fontMenu*fontdefault*Label: Default
+XTerm*font: -misc-fixed-medium-r-normal-*-18-120-100-100-c-90-iso10646-1
+XTerm*wideFont: -misc-fixed-medium-r-normal-*-18-120-100-100-c-180-iso10646-1
+
+XTerm*font1.Label: efont 12 pixel
+XTerm*font1: -efont-fixed-medium-r-normal-*-12-120-75-75-c-60-iso10646-1
+XTerm*wideFont1: -efont-fixed-medium-r-normal-*-12-120-75-75-c-120-iso10646-1
+XTerm*font2.Label: misc 13 pixel
+XTerm*font2: -misc-fixed-medium-r-semicondensed-*-13-120-75-75-c-60-iso10646-1
+XTerm*wideFont2: -misc-fixed-medium-r-normal-*-13-120-75-75-c-120-iso10646-1
+XTerm*font3.Label: efont 14 pixel
+XTerm*font3: -efont-fixed-medium-r-normal-*-14-140-75-75-c-70-iso10646-1
+XTerm*wideFont3: -efont-fixed-medium-r-normal-*-14-140-75-75-c-140-iso10646-1
+XTerm*font4.Label: efont 16 pixel
+XTerm*font4: -efont-fixed-medium-r-normal-*-16-160-75-75-c-80-iso10646-1
+XTerm*wideFont4: -efont-fixed-medium-r-normal-*-16-160-75-75-c-160-iso10646-1
+XTerm*font5.Label: misc 18 pixel
+XTerm*font5: -misc-fixed-medium-r-normal-*-18-120-100-100-c-90-iso10646-1
+XTerm*wideFont5: -misc-fixed-medium-r-normal-*-18-120-100-100-c-180-iso10646-1
+XTerm*font6.Label: efont 24 pixel
+XTerm*font6: -efont-fixed-medium-r-normal-*-24-240-75-75-c-120-iso10646-1
+XTerm*wideFont6: -efont-fixed-medium-r-normal-*-24-240-75-75-c-240-iso10646-1
+
+!XTerm*background: black
+!XTerm*foreground: white
+!XTerm*scrollbar: yes
+
+! Solarized color scheme for the X Window System
+!
+! http://ethanschoonover.com/solarized
+
+
+! Common
+
+#define S_yellow        #b58900
+#define S_orange        #cb4b16
+#define S_red           #dc322f
+#define S_magenta       #d33682
+#define S_violet        #6c71c4
+#define S_blue          #268bd2
+#define S_cyan          #2aa198
+#define S_green         #859900
+
+
+! Dark
+
+#define S_base03        #002b36
+#define S_base02        #073642
+#define S_base01        #586e75
+#define S_base00        #657b83
+#define S_base0         #839496
+#define S_base1         #93a1a1
+#define S_base2         #eee8d5
+#define S_base3         #fdf6e3
+
+
+! Light
+
+! #define S_base03        #fdf6e3
+! #define S_base02        #eee8d5
+! #define S_base01        #93a1a1
+! #define S_base00        #839496
+! #define S_base0         #657b83
+! #define S_base1         #586e75
+! #define S_base2         #073642
+! #define S_base3         #002b36
+
+
+! To only apply colors to your terminal, for example, prefix
+! the color assignment statement with its name. Example:
+!
+! URxvt*background:            S_base03
+
+*background:              S_base03
+*foreground:              S_base0
+*fading:                  40
+*fadeColor:               S_base03
+*cursorColor:             S_base1
+*pointerColorBackground:  S_base01
+*pointerColorForeground:  S_base1
+
+*color0:                  S_base02
+*color1:                  S_red
+*color2:                  S_green
+*color3:                  S_yellow
+*color4:                  S_blue
+*color5:                  S_magenta
+*color6:                  S_cyan
+*color7:                  S_base2
+*color9:                  S_orange
+*color8:                  S_base03
+*color10:                 S_base01
+*color11:                 S_base00
+*color12:                 S_base0
+*color13:                 S_violet
+*color14:                 S_base1
+*color15:                 S_base3

@@ -1,0 +1,4 @@
+set font "monaco 14"
+
+# display command line, undisplay the statusbar
+set guioptions c

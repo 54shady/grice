@@ -1,0 +1,15 @@
+[options]
+verbose = 0
+delete = true
+message_log = ~/.getmail/log
+message_log_verbose = true
+
+[retriever]
+type = SimplePOP3Retriever
+server = pop.163.com
+username = name@server
+password = pass-for-demo
+
+[destination]
+type = Maildir
+path = ~/Mail/inbox/

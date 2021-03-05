@@ -1,0 +1,7 @@
+# strace virt-inspector something.img
+# equery f libguestfs-appliance
+# bugfix for libguestfs
+LIBGUESTFS_PATH="/usr/share/guestfs/appliance"
+
+# add for tools and utils
+export PATH=$PATH:~/tools:~/holdall

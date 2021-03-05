@@ -1,0 +1,13 @@
+# emoji picker
+super + grave
+	emoji_picker
+
+# trigger mouse left click on calendar
+super + c
+	clk-bt1
+
+ctrl + alt + l
+	i3lock -c 000000
+
+F9
+	vncviewer :0

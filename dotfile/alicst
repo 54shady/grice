@@ -1,0 +1,46 @@
+# repo
+alias repoab='repo abandon'
+alias repos='repo sync'
+alias repob='repo branch'
+alias repost='repo status'
+
+# git
+alias gr='git remote -v'
+alias gl='git log --pretty="%h - %s" --no-merges'
+alias glr='git log --pretty="%h - %s" --no-merges --reverse'
+alias glp='git log -p --no-merges'
+alias glpr='git log -p --no-merges --reverse'
+alias gw='git whatchanged --oneline'
+alias gs='git status'
+alias gd='git diff'
+alias gdc='git diff --cached'
+alias gb='git branch'
+alias gch='git checkout HEAD'
+alias gcl='git config --list'
+alias gkl='git clone'
+alias gpl='git pull'
+alias gph='git push'
+
+# adb
+alias adbs='adb shell'
+alias adbr='adb root && adb wait-for-device && adb remount && adb shell mount -o remount rw /'
+
+# downloadiso *.iso form a url
+alias downloadiso="wget -rnp -A.iso"
+
+# virsh
+alias vls='virsh list --all'
+alias ve='virsh edit'
+alias vud='virsh undefine'
+alias vdt='virsh destroy'
+alias vs='virsh start'
+
+# misc
+alias qimg='qemu-img'
+
+# ssh
+alias sshlt='sshpass -p "passwd" ssh root@ip'
+alias jb='jobs'
+
+# connect ftp server(serverip) via username and password port 21
+#alias shareftp='lftp -e "set ssl:verify-certificate false" -u username,password -p 21 serverip'

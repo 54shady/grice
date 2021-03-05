@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+
+# default search engine
+DEFAULT_SEARCH_ENGINE="https://www.baidu.com/s?wd="
+
+# using firefox as default browser
+DEFAULT_BROWSER="qutebrowser"
+
+# parse search key
+until [ $# -eq 0 ]
+do
+	search_keys+="$1 "
+	shift
+done
+
+# fire the search
+${DEFAULT_BROWSER} ${DEFAULT_SEARCH_ENGINE}"${search_keys}"
+
+# autojump to workspace, using i3wm
+# "" is the workspace alias name of browser
+# which define in i3 config file as below
+# set $workspace2 ""
+# assign [class="Firefox"] $workspace2
+[ $(pgrep -x i3) ] && i3-msg -q workspace ""

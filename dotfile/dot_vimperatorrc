@@ -1,0 +1,19 @@
+"3.14.0 (created: 2016/06/07 23:58:16)
+
+source! /home/zeroway/.vimperatorrc.local
+
+set runtimepath=/home/zeroway/.vimperator
+let mapleader = ","
+
+"buffer
+nmap <leader>ls :ls<CR>
+nmap <leader>bd :bd<CR>
+nmap <leader>bn :bn<CR>
+nmap <leader>bp :bp<CR>
+
+hi Hint::after -append font-size:15pt
+
+noremap j 5j
+noremap k 5k
+
+" vim: set ft=vimperator:
