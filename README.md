@@ -38,6 +38,29 @@ login fromm tty1 work flow(Xresources should load before i3wm)
 
 	.bash_profile ==> startx ==> .xinitrc ==> i3wm
 
+## xdg-utils
+
+如下的相关文件都记录xdg-open默认使用什么程序打开文件
+
+	/usr/share/applications/mimeapps.list
+	/usr/share/applications/mimeinfo.cache
+	~/.local/share/applications/defaults.list
+	~/.local/share/applications/mimeapps.list
+	~/.local/share/applications/mimeinfo.cache
+
+查看pdf文件的分类
+
+	file -i file.pdf
+	application/pdf; charset=binary
+
+查询打开这个分类的默认应用程序
+
+	xdg-mime query default application/pdf
+
+想要让xdg-open默认使用zathura来打开(修改上述文件中的内容如下)
+
+	application/pdf=org.pwmt.zathura-pdf-mupdf.desktop;
+
 ## Download and Install
 
 Download the source code

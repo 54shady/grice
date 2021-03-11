@@ -4,4 +4,4 @@
 LIBGUESTFS_PATH="/usr/share/guestfs/appliance"
 
 # add for tools and utils
-export PATH=$PATH:~/tools:~/holdall
+export PATH=$PATH:~/tools:$HOME/.grice/bin

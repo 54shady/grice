@@ -3,20 +3,17 @@ set use_from=yes
 set from=name@server
 set envelope_from=yes
 set realname = "yournamegoeshere"
-set spoolfile = ~/Mail/inbox
-set folder    = ~/Mail
+
+set folder    = ~/Mail # 所有信件所在目录
+set mbox      = +inbox # 收件箱文件
+set mbox      = +qemuml # qemu mail list
+set record    = +sent # 发件箱文件
+set spoolfile = ~/Mail/inbox # 启动mutt后默认显示的信箱文件
 set tmpdir    = ~/.mutt/tmp
 set mbox_type = Maildir
-set mbox      = +inbox
-set record    = +sent
 set postponed = +postponed
 
-mailboxes \
-$MAIL \
-=inbox \
-=junkmail \
-=favorites \
-=archive
+#mailboxes Mailbox sent-mail
 
 set move = no
 
@@ -65,7 +62,10 @@ set pager_index_lines = 5
 
 # message editor
 set editor = "vim"
+
+# 当你按"r"回信时，不提示你输入回信地址和主题，直接进入编辑模式
 set fast_reply = yes
+
 set edit_headers = yes
 
 # ext app to view attachment
@@ -109,8 +109,8 @@ mono indicator reverse
 #
 auto_view text/html
 
-# include original content when reply
-set include = yes
+set include = yes # 回信时是否包含原文
+set indent_str="> " # 回信引文前的符号
 
 # from
 set envelope_from = yes
@@ -142,3 +142,15 @@ macro index  F    "c=favorites\r"
 macro pager  F    "c=favorites\r"
 macro index  J  "c=junkmail\r"
 macro pager  J  "c=junkmail\r"
+
+# 判断邮件列表
+subscribe qemu-devel@nongnu.org
+subscribe gentoo-user@lists.gentoo.org
+subscribe gentoo-dev@lists.gentoo.org
+
+# mailcap setting
+set mailcap_path = ~/.mailcap:$mailcap_path
+auto_view text/html		# automatically show html (mailcap uses lynx)
+auto_view application/pgp-encrypted
+bind attach <return> view-mailcap
+bind attach l view-mailcap
