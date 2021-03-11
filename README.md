@@ -109,3 +109,19 @@ msmtp
 	chmod 600 ~/.msmtprc
 	sed -i 's/name@server/demo@163.com/' ~/.grice/dotfile/dot_msmtprc
 	sed -i 's/pass-for-demo/mypass/' ~/.grice/dotfile/dot_msmtprc
+
+Microsoft Exchange Server(Using DavMail as gateway)
+
+邮件服务器是微软Exchange的话可以使用DavMail来作本地代理服务器
+
+DavMail default port
+
+	SMTP 1025
+	POP 1110
+	IMAP 1143
+	CALDAV 1080
+	LDAP 1389
+
+getmail可以配置多个配置文件来同时接收多个邮箱的邮件
+
+	getmail -r /path/to/getmailrc-davmail

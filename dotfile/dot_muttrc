@@ -117,17 +117,17 @@ set envelope_from = yes
 set encode_from = yes
 
 #send hook
-send-hook . 'my_hdr from:name@server'
-send-hook . 'set sendmail="/usr/bin/msmtp"'
-reply-hook . 'my_hdr reply-to:name@server'
+#send-hook . 'my_hdr from:name@server'
+#send-hook . 'set sendmail="/usr/bin/msmtp"'
+#reply-hook . 'my_hdr reply-to:name@server'
 
-send-hook '~t .*@163\.com$' 'my_hdr from:name@server'
-send-hook '~t .*@163\.com$' 'my_hdr reply-to:name@server'
-send-hook '~t .*@163\.com$' 'set sendmail="/usr/bin/msmtp -a 163"'
-
-reply-hook '~t .*@163\.com$' 'my_hdr from:name@server'
-reply-hook '~t .*@163\.com$' 'my_hdr reply-to:name@server'
-reply-hook '~t .*@163\.com$' 'set sendmail="/usr/bin/msmtp -a 163"'
+#send-hook '~t .*@163\.com$' 'my_hdr from:name@server'
+#send-hook '~t .*@163\.com$' 'my_hdr reply-to:name@server'
+#send-hook '~t .*@163\.com$' 'set sendmail="/usr/bin/msmtp -a 163"'
+#
+#reply-hook '~t .*@163\.com$' 'my_hdr from:name@server'
+#reply-hook '~t .*@163\.com$' 'my_hdr reply-to:name@server'
+#reply-hook '~t .*@163\.com$' 'set sendmail="/usr/bin/msmtp -a 163"'
 
 #key binding getmail
 macro index    G "!~/.getmail/getmail\n"   "Invoke getmail"

@@ -1,0 +1,8 @@
+account default
+host localhost
+port 1025
+user name@server
+from name@server
+auth login
+tls off
+password pass-for-demo
