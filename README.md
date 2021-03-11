@@ -61,6 +61,10 @@ login fromm tty1 work flow(Xresources should load before i3wm)
 
 	application/pdf=org.pwmt.zathura-pdf-mupdf.desktop;
 
+或者手动设置
+
+	xdg-mime default /usr/share/applications/org.pwmt.zathura-pdf-mupdf.desktop application/pdf
+
 ## Download and Install
 
 Download the source code
@@ -148,3 +152,4 @@ DavMail default port
 getmail可以配置多个配置文件来同时接收多个邮箱的邮件
 
 	getmail -r /path/to/getmailrc-davmail
+	chmod 600 /path/to/getmailrc-davmail
