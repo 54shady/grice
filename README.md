@@ -104,7 +104,11 @@ Translate using youdao online dictionary
 
 ## MailBox setup
 
-mail info
+准备邮箱目录
+
+	mkdir -p Mail/inbox/{cur,new,tmp}
+
+假设邮箱信息如下
 
 	name: demo@163.com
 	password: mypass
@@ -120,6 +124,8 @@ getmail(执行getmail收取邮件 可以写入crontab)
 	ln -s ~/.grice/getmail ~/.getmail
 	sed -i 's/name@server/demo@163.com/' ~/.grice/getmail/getmailrc
 	sed -i 's/pass-for-demo/mypass/' ~/.grice/getmail/getmailrc
+
+配置好getmail后手动执行收信息来将inbox配置为邮箱目录
 
 使用sys-process/cronie来定时执行
 
