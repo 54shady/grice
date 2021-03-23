@@ -20,6 +20,9 @@ alias gcl='git config --list'
 alias gkl='git clone'
 alias gpl='git pull'
 alias gph='git push'
+alias grhh='git reset --hard HEAD'
+alias gco='git checkout'
+alias gad='git add'
 
 # adb
 alias adbs='adb shell'
