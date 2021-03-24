@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
 source viewer.sh
-FILES_PATH="$HOME/.grace/"
+FILES_PATH="$HOME/.grice/"
 
 file_viewer $FILES_PATH
