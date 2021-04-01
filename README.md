@@ -1,6 +1,18 @@
-# Gentoo Rice(All the setup for my gentoo linux)
+# Gentoo Rice(All the setup for rice gentoo linux)
 
-## Basic Comcept
+## Usage
+
+Download the source code
+
+	git clone https://github.com/54shady/grice.git ~/.grice
+
+Install Tmux Plugin Manager
+
+	git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+Make links to the target file using [deply.sh](deploy.sh)
+
+## Linux Basic
 
 ### xprofile
 
@@ -38,7 +50,7 @@ login fromm tty1 work flow(Xresources should load before i3wm)
 
 	.bash_profile ==> startx ==> .xinitrc ==> i3wm
 
-## xdg-utils
+### xdg-utils
 
 如下的相关文件都记录xdg-open默认使用什么程序打开文件
 
@@ -65,21 +77,9 @@ login fromm tty1 work flow(Xresources should load before i3wm)
 
 	xdg-mime default /usr/share/applications/org.pwmt.zathura-pdf-mupdf.desktop application/pdf
 
-## Download and Install
+## Fantastic tool
 
-Download the source code
-
-	git clone https://github.com/54shady/grice.git ~/.grice
-
-Install Tmux Plugin Manager
-
-	git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-
-## Make Links
-
-Make links to the target file using [deply.sh](deploy.sh)
-
-## Do web search in terminal
+### Do web search in terminal
 
 Quick search in terminal using hotkey 's'
 
@@ -91,7 +91,7 @@ Example for search "gentoo linux"
 
 	$ s gentoo linux
 
-## Quick translate in terminal
+### Quick translate in terminal
 
 Make a link(the first charactor of translate)
 
@@ -102,7 +102,7 @@ Translate using youdao online dictionary
 	$ t hello world
 	$ t 'have a nice day'
 
-## MailBox setup
+## MailSetup
 
 准备邮箱目录
 
