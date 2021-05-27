@@ -97,7 +97,7 @@ white=$'\[\e[1;37m\]'
 normal=$'\[\e[m\]'
 
 # Configure PS1, we now only using dwm as defalt WM
-if [ $(pgrep -x dwm) ]
+if [ "$(pgrep -x dwm | wc -l)" -gt 0 ]
 then
 	PS1="$red[\W$yellow\$git_branch$red]$ $normal"
 else
