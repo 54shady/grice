@@ -34,10 +34,14 @@ ssh -p $port anonymous@$ip "mkdir ~/.ssh"
 cat ~/.ssh/id_rsa.pub | ssh -p $port anonymous@$ip "cat > ~/.ssh/authorized_keys"
 
 # config bash
+ssh -p $port anonymous@$ip "mkdir -p ~/.grice/dotfile"
+scp -P $port dotfile/alicst anonymous@$ip:~/.grice/dotfile/
+scp -P $port dotfile/cpath anonymous@$ip:~/.grice/dotfile/
 scp -P $port dotfile/dot_bashrc anonymous@$ip:~/.bashrc
 
 # config vim
 tar cvf vim.tar vim
 cat vim.tar | ssh -p $port anonymous@$ip "tar xvf -"
+ssh -p $port anonymous@$ip "mv ~/vim ~/.vim"
 ssh -p $port anonymous@$ip "ln -s ~/.vim/vimrc ~/.vimrc"
 rm vim.tar
